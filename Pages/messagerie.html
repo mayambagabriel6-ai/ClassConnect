@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagerie</title>
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main class="contenu-page messagerie-layout">
+
+    <section class="discussions-sidebar">
+        <h3><i class="fas fa-envelope"></i> Messages</h3>
+        <div class="liste-contacts">
+            
+            <div class="contact-item actif">
+                <div class="avatar-mini">👤</div>
+                <div class="contact-infos">
+                    <h4>Jean Dupont (Tuteur)</h4>
+                    <p class="dernier-msg">Tu as compris pour l'exercice ?</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="avatar-mini">👤</div>
+                <div class="contact-infos">
+                    <h4>Aline Mwamba</h4>
+                    <p class="dernier-msg">Merci beaucoup pour ton aide !</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="chat">
+        
+        <header class="chat-header">
+            <div class="chat-user">
+                <div class="avatar-mini">👤</div>
+                <div class="chat-user-info">
+                    <a href="profil.html" class="chat-user-link"><h4>Jean Dupont</h4></a>
+                    <span class="statut-en-ligne">● En ligne</span>
+                </div>
+            </div>
+            <span class="badge badge-dispo">Disponible</span>
+        </header>
+        <div class="chat-msg-body">
+            
+            <div class="msg recu">
+                <p class="texte-msg">Salut ! On se capte à quelle heure pour la séance sur l'architecture des systèmes ?</p>
+                <span class="hr-msg">14:02</span>
+            </div>
+
+            <div class="msg envoye">
+                <p class="texte-msg">Salut Jean ! Si tu es dispo, 16h ça me va super bien.</p>
+                <span class="hr-msg">14:05</span>
+            </div>
+
+        </div>
+
+        <form class="chat-input-barre">
+            <input type="text" placeholder="Envoyer un message" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+
+    </section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassConnect</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body id="hautpg" class="index-body">
+    <header>
+    <div><i class="fas fa-user-graduate"></i>ClassConnect</div>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="Pages/accueil.html">Trouver un tuteur</a></li>
+            <li><a href="#inscription">S'inscrire</a></li>
+        </ul>
+    </nav>
+    </header>
+<!--hero-->
+<main>
+<article class="titre">
+<h1 id="accueil" class="part"><i class="fas fa-book"></i> <i class="fas fa-user-graduate"></i> <br> Bienvenue sur ClassConnect!</h1></article> <br> 
+<h4 class="slogan">Apprendre ensemble, grandir ensemble.</h4>
+<section>
+<h2 class="part">En quoi ça consisite?</h2>
+    <br><p>ClassConnect est une plateforme éducative qui met en relation des étudiants et des tuteurs afin de faciliter l'apprentissage, le partage des connaissances et l'accompagnement académique dans un environnement simple, accessible et interactif. 
+    <br>Bien plus qu'une plateforme de tutorat : ClassConnect est un espace où le savoir crée des liens. Son objectif est de rapprocher les élèves et les tuteurs pour transformer chaque difficulté en opportunité d'apprendre, de progresser et de réussir ensemble.
+    <br>ClassConnect, c'est aussi un outil EdTech qui permet aux apprenants de trouver rapidement un accompagnement adapté à leurs besoins grâce à un système de profils, de recherche et de communication directe. En favorisant l'accès au soutien scolaire et au partage des connaissances, ClassConnect contribue à rendre l'éducation personnalisée et connectée.
+    <br><strong>Parce que chaque élève mérite de trouver le soutien dont il a besoin, et chaque tuteur mérite de partager son savoir.</strong> 
+    </p>
+<div> Notre mission est de créer une communauté d'apprentissage accesible, inclusive et  où les étudiants peuvent trouver des tuteurs qualifiés pour les aider à surmonter leurs défis académiques, et où les tuteurs peuvent partager leur expertise pour faire une différence dans la vie des apprenants. </div>
+</section>
+<section class="card-container">
+    <h2 id="apropos" class="part">Comment ça marche?</h2>
+    <h3>Simple et efficace</h3>
+    <section class="cards">
+    <blockquote class="card"><p class="emoji">🙋</p><h3>Dites-nous en plus sur vous!</h3><p>Inscrivez-vous en tant qu'étudiant pour recevoir du soutien ou tuteur pour partager votre savoir.</p></blockquote>
+    <blockquote class="card"><p class="emoji">🔎</p><h3>Trouvez ce qui vous correspond!</h3> <p>Recherchez un tuteur ou un étudiant selon vos besoins et votre profil.</p></blockquote>
+    <blockquote class="card"><p class="emoji">🤝</p><h3>Rejoignez notre communauté!</h3> <p>Rejoignez notre communauté d'étudiants et de tuteurs pour enrichir votre expérience éducative.</p></blockquote>
+    </section>
+</section>
+<section>
+    <h2 id="inscription" class="part">Commencez dès maintenant!</h2> <br>
+        <p>Que vous soyez un étudiant en quête d'un boost ou un tuteur désireux de partager votre expertise, ClassConnect vous correspond.</p>
+        <br>
+    <div class="role">
+    <a href="Inscriptions/etud.html" class="role-et"><input type="submit" value="Je suis un étudiant"name="role" value="etudiant" action="./Inscriptions/Etud.html" method="post"></a>
+    <a href="Inscriptions/tuteur.html" class="role-tut"><input type="submit" value="Je suis un tuteur"name="role" value="tuteur" action="./Inscriptions/Tuteur.html" method="post"></a> 
+    <div>
+    <br> <span class="switch-text">Vous avez déjà un compte ?</span> <a class="link-action" href="Inscriptions/connexion.html">Se connecter</a>
+</section>
+</main>
+
+<footer>
+    <div>
+    <h4><i class="fas fa-user-graduate"></i>ClassConnect</h4>
+    <p>Apprendre ensemble, grandir ensemble. &copy; 2026 ClassConnect. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll('input[type="submit"]');
+        buttons.forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                const role = this.value === "Je suis un étudiant" ? "etudiant" : "tuteur";
+                const url = role === "etudiant" ? "Inscriptions/Etud.html" : "Inscriptions/Tuteur.html";
+                window.location.href = url;
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

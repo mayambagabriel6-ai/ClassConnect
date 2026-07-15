@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main class="profil-page">
+        <section class="profil-hero">
+            <div class="profil-hero-header">
+                <div class="profil-name-block">
+                    <p class="profil-kicker"><a href="accueil.html"><i class="fas fa-arrow-left"></i></a>Profil utilisateur</p>
+                    <h1 id="profilname">Gabriel Mayamba</h1>
+                </div>
+                <div class="profil-hero-actions">
+                    <button id="edit-profile-button"><i class="fas fa-edit"></i> Modifier mon profil</button>
+                    <a href="../index.html"><button><i class="fas fa-sign-out-alt"></i> Se déconnecter</button></a>
+                </div>
+            </div>
+
+            <div class="profil-hero-content">
+                <div class="profil-photo-block">
+                    <img id="profil-photo" src="../default-profile.png" alt="Photo de profil">
+                    <button id="edit-photo-btn" type="button"><i class="fas fa-camera"></i> Changer la photo</button>
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                </div>
+
+                <div class="profil-info">
+                    <p class="badge badge-et">Etudiant</p>
+                    <p><strong>Université:</strong> <span id="universite">Université Portestante au Congo</span></p>
+                    <p><strong>Nom:</strong> <span id="nomProfil">Mayamba</span></p>
+                    <p><strong>Prénom:</strong> <span id="prenomProfil">Gabriel</span></p>
+                    <p><strong>Niveau d'étude:</strong><span id="niv"> Licene 1</span></p>
+                    <p><strong>Statut:</strong><span id="statut"> Disponible</span></p>
+                    <a href="messagerie.html" class="contact-link"><i class="fas fa-envelope"></i> Contacter</a>
+                </div>
+                <div id="edit-profile-form" class="edit-profile-form" style="display:none;"></div>
+            </div>
+        </section>
+
+        <div class="profil-body-grille">
+        
+        <!-- Colonne Gauche : Bio et Matières -->
+        <section class="profil-Apropos">
+            <h3>À propos de moi</h3>
+            <p class="bio-texte">
+                Passionné par le développement web et l'architecture des systèmes. 
+                Je cherche un tuteur pour m'améliorer en logique combinatoire.
+            </p>
+
+            <h3>Matières / Compétences</h3>
+            <div class="tags-competences">
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">Architecture Von Neumann</span>
+                <span class="tag">Algorithmique</span>
+            </div>
+        </section>
+
+        <!-- Colonne Droite : Disponibilités ou Infos de contact -->
+        <section class="profil-infos-annexes">
+            <h3>Mes Disponibilités</h3>
+            <ul class="dispos-liste">
+                <li><i class="fas fa-calendar"></i> Lundi : 14h - 18h</li>
+                <li><i class="fas fa-calendar"></i> Mercredi : 09h - 12h</li>
+                <li><i class="fas fa-calendar"></i> Samedi : Tout le temps</li>
+            </ul>
+
+            <h3>Contact & Réseaux</h3>
+            <ul class="liens-contact">
+                <li><i class="fas fa-envelope"></i> mayambagabriel6@gmail.com</li>
+                <li><i class="fab fa-github"></i> github/mayambagabriel-io</li>
+            </ul>
+        </section>
+        
+        </div>
+    </main>
+</body>
+<!--script type="module" src="../js/profil.js"></script-->
+</html>

@@ -1,0 +1,301 @@
+/* Mise en page globale de l'écran d'inscription. */
+body {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    background-image: url(fondlav.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /**background-color: #f5f5f5;**/
+    padding: 70px 100px;
+    margin:0%;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+/* Formulaire d'inscription avec fond flou et bord arrondi. */
+form {
+    background-color: #ffffff45;
+    padding: 60px 80px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: min(620px, 90w);
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
+}
+
+/* Grille des champs du formulaire à trois colonnes pour les sélecteurs et champs annexes. */
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 15px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+ h2 {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #573ca9;
+    font-size: 32px;
+    font-weight: 1000;
+}
+h3{
+    color: #342466;
+}
+p{
+    align-self: center;
+    justify-content: center;
+}
+.switch-text {
+    margin: 12px 0 8px;
+    color: #342466;
+    font-weight: 700;
+}
+a {
+    padding-top: 8px;
+    text-decoration: none;
+    color: #573ca9;
+    font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
+}
+a:hover {
+    color: #351958;
+    transform: translateY(-1px);
+    text-shadow: 0 2px 6px rgba(53, 25, 88, 0.16);
+}
+.link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #864ef7, #6c39d6);
+    color: #fff;
+    border-radius: 999px;
+    box-shadow: 0 8px 16px rgba(134, 78, 247, 0.2);
+}
+.link:hover {
+    background: linear-gradient(135deg, #6c39d6, #4e2a9d);
+    color: #fff;
+}
+.role {
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 999px;
+    margin: 6px 0 20px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 6px 14px rgba(87, 60, 169, 0.12);
+}
+.role a {
+    text-decoration: none;
+}
+.role + h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.role-tut,
+.role-et {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+.role-tut {
+    background: #f5efff;
+    color: #5c3bb3;
+    border: 1px solid #dbccff;
+}
+.role-tut:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(92, 59, 179, 0.14);
+}
+.role-et {
+    background: #efe8ff;
+    color: #573ca9;
+    border: 1px solid #d5c0ff;
+    box-shadow: none;
+}
+.role-et:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(92, 59, 179, 0.14);
+}
+.role a input[type="submit"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    color: inherit;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: none;
+}
+.role a input[type="submit"]:hover {
+    background: transparent;
+    color: inherit;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #323131;
+    font-weight: 600;
+}
+.bubble{
+        display: block;
+        margin: 10px 0 8px;
+        font-weight: 600;
+        box-shadow: none;
+        width: 100%;
+        }
+.bubble-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.bubble-item{
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 8px 14px;
+}
+.bubble-item label{
+        display: inline-flex;
+        /**width: 100px;
+        font-size: 14px;**/
+        align-items: center;
+        text-align: center;
+        border: 1px solid #acabaf;
+        border-radius: 14px;
+        padding: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        color: rgba(135, 106, 181, 0.893);
+        box-shadow: 0 4px 8px rgba(34, 10, 70, 0.068);
+        }
+.bubble-item:hover label {
+    border-color: #7c5df0;
+    transform: translateY(-1px);
+}
+.bubble-item input[type="checkbox"]:checked + label {
+    background: #7c5df0;
+    color: #fff;
+    border-color: #7c5df0;
+    box-shadow: 0 8px 16px rgba(124, 93, 240, 0.18);
+}
+        .sqr{
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            display: none;
+        }
+ select{
+    width: 30%;
+    display: block;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 16px; 
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 38px;
+}
+ select:focus {
+  outline: none;
+  border-color: #7c5df0;
+  box-shadow: 0 0 0 4px rgba(124,93,240,0.12);
+}
+ input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+} 
+ input[type="checkbox"]:checked + label {
+  font-weight: bold;
+  color: #000;
+}
+ input[type="submit"] {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    padding-top: 10px 12px;
+    background-color: #d9c7fc;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ input[type="submit"]:hover {
+    background-color: #351958;
+}
+ textarea,input:not([type="checkbox"]):not([type="submit"]) {
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-family: sans-serif;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+    }
+ textarea:hover,
+ input:not([type="checkbox"]):not([type="submit"]):hover,
+ textarea:focus,
+ input:not([type="checkbox"]):not([type="submit"]):focus {
+  outline: none;
+  border-color: #7c5df0;
+  box-shadow: 0 0 0 4px rgba(124,93,240,0.12);
+  transform: translateY(-1px);
+  background-color: rgba(255,255,255,0.98);
+ }
+/**}.former-group input[type="submit"]:hover {
+        color: #ccc;
+        background-color: #8e8b8b;
+}
+input[type="radio"]:checked + .role-label {
+    background-color: #fef08a; /*Fond jaune très clair*/
+    /**border-color: var(--primary-color);
+    color: var(--text-main);
+}**/
+
+@media (max-width: 768px) {
+    .form-row,
+    .form-row.two-cols {
+        grid-template-columns: 1fr;
+    }
+}

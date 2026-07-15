@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Je suis un étudiant</title>
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="inscriptions.css">
+</head>
+
+<body>
+    <form action="" id="registerForm">
+        <h2>Rejoignez ClassConnect !</h2>
+        <div class="role"><a href="etud.html" class="role-et" >Je suis un étudiant</a><a href="tuteur.html" class="role-tut">Je suis un tuteur</a></div>
+        <h3>Inscrivez-vous en tant qu'étudiant pour trouver le soutien dont vous avez besoin.</h3>
+        <label for="nom">Nom</label>
+        <input type="text" name="Nom" id="nom" placeholder="Nom" label="Nom" required> <br>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="Prénom" id="prenom" placeholder="Prénom" label="Prénom" required> <br>
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="email" placeholder="Adresse e-mail" label="Email" required> <br>
+        <div class="form-row">
+        <div class="form-group">
+        <label for="uni">Université</label>
+        <select type="text" name="université" id="uni" label="Niveau d'étude" class="bubble-options">
+            <option value="none">Aucune</option>
+            <option value="upc">Université Protestante au Congo</option>
+            <option value="ucc">Université Catholique du Congo</option>
+            <option value="unikin">Université de Kinshasa</option>
+            <option value="upn">Université Pédagogique Nationale</option>
+            <option value="loyola">Université Loyola au Congo</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <label for="fil">Filière</label>
+        <select type="text" name="Filière" id="fil" label="Filière" class="bubble-options">
+            <option value="droit">Droit</option>
+            <option value="info">Informatique</option>
+            <option value="eco">Economie</option>
+            <option value="med">Médecine</option>
+            <option value="ing">Ingénierie</option>
+            <option value="autre">Autre</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <label for="niv">Niveau d'étude</label>
+        <select type="text" name="Niveau" id="niv" label="Niveau d'étude" class="bubble-options">
+            <option value="licence1">Licence1</option>
+            <option value="licence2">Licence2</option>n
+            <option value="licence3">Licence3</option>
+            <option value="licence4">Licence4</option>
+            <option value="master1">Master1</option>
+            <option value="master2">Master2</option>
+            <option value="doctorat1">Doctorat1</option>
+            <option value="doctorat2">Doctorat2</option>
+        </select>
+        </div>
+        </div>
+        <label for="matieres" class="bubble">Matières d'intérêt</label>
+        <div class="matieres">
+            <div class="bubble-item">
+                <input type="checkbox" id="math" name="matieres" value="math">
+                <label for="math">Mathématiques</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="physique" name="matieres" value="physique">
+                <label for="physique">Physique</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="chimie" name="matieres" value="chimie">
+                <label for="chimie">Chimie</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="prog" name="matieres" value="prog">
+                <label for="prog">Programmation</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="eco" name="matieres" value="eco">
+                <label for="eco">Economie</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="lang" name="matieres" value="lang">
+                <label for="lang">Langues</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="elec" name="matieres" value="elec">
+                <label for="elec">Électronique/Électricité</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="autre" name="matieres" value="autre">
+                <label for="autre">Autre</label>
+            </div>
+        </div>
+        <br>
+        <label for="disponibilité" class="bubble">Disponibilité</label>
+        <div class="disponibilité">
+            <div class="bubble-item">
+                <input type="checkbox" id="lundi" name="disponibilité" value="lundi">
+                <label for="lundi">Lundi</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="mardi" name="disponibilité" value="mardi">
+                <label for="mardi">Mardi</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="mercredi" name="disponibilité" value="mercredi">
+                <label for="mercredi">Mercredi</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="vendredi" name="disponibilité" value="vendredi">
+                <label for="vendredi">Vendredi</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="samedi" name="disponibilité" value="samedi">
+                <label for="samedi">Samedi</label>
+            </div>
+            <div class="bubble-item">
+                <input type="checkbox" id="dimanche" name="disponibilité" value="dimanche">
+                <label for="dimanche">Dimanche</label>
+            </div>
+        </div>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" placeholder="Parlez-nous un peu de vous..." required></textarea> <br>
+        <br><label for="mdp">Mot de passe</label>
+        <input type="password" name="Mot de passe" id="mdp" placeholder="Mot de passe" required> <br>
+        <label for="mdp2">Confirmer mot de passe</label>
+        <input type="password" name="Confirmer mot de passe" id="mdp2" placeholder="Confirmer mot de passe" required> <br>
+        <input type="submit" value="S'inscrire">
+    <p class="switch-text">Vous avez déjà un compte ?</p>
+    <a class="link" href="connexion.html">Se connecter à mon compte</a>
+    <br>
+    <a href="../index.html">Retour à l'accueil</a></P>
+</form> <br>
+   
+    <script type="module" src="../js/inscription.js"></script>
+</body>
+</html>
