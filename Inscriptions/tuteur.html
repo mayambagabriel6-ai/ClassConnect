@@ -10,7 +10,7 @@
 <body>
     <form action="" id="registerForm">
         <h2>Rejoignez ClassConnect !</h2> <br>
-        <div class="role"><a href="etud.html" class="role-et" >Je suis un étudiant</a><a href="tuteur.html" class="role-tut">Je suis un tuteur</a></div>
+        <div class="role"><a href="etud.html" class="role-et" >Je suis un étudiant</a><a href="tuteur.html" class="role-tut active">Je suis un tuteur</a></div>
 
         <h3>Inscrivez-vous en tant que tuteur pour partager votre savoir et aider les étudiants.</h3>
         <label for="nom">Nom</label>
@@ -24,7 +24,7 @@
         <div class="form-row">
         <div class="form-group">
         <label for="niv">Niveau d'étude</label>
-        <select type="text" name="Niveau d'étude" id="niv" class="bubble-options">
+        <select type="text" name="Niveau d'étude" id="niv" class="dropdown">
             <option value="none">Aucun</option>
             <option value="licence">Licence</option>
             <option value="master">Master</option>
@@ -32,23 +32,23 @@
         </select></div>
         <div class="form-group">
         <label for="uni">Université</label>
-        <select type="text" name="Université" id="uni" class="bubble-options">
-            <option value="none">Aucune</option>
-            <option value="upc">Université Protestante au Congo</option>
-            <option value="ucc">Université Catholique du Congo</option>
-            <option value="unikin">Université de Kinshasa</option>
-            <option value="upn">Université Pédagogique Nationale</option>
-            <option value="loyola">Université Loyola au Congo</option>
-            <option value="autre">Autre</option>
+        <select type="text" name="Université" id="uni" class="dropdown">
+            <option value="none" class="dropdown-option">Aucune</option>
+            <option value="upc" class="dropdown-option">Université Protestante au Congo</option>
+            <option value="ucc" class="dropdown-option">Université Catholique du Congo</option>
+            <option value="unikin" class="dropdown-option">Université de Kinshasa</option>
+            <option value="upn" class="dropdown-option">Université Pédagogique Nationale</option>
+            <option value="loyola" class="dropdown-option">Université Loyola au Congo</option>
+            <option value="autre" class="dropdown-option">Autre</option>
         </select></div>
         <div class="form-group">
         <label for="fil">Filière</label>
-        <select type="text" name="Filière" id="fil" class="bubble-options">
-            <option value="droit">Droit</option>
-            <option value="info">Informatique</option>
-            <option value="eco">Economie</option>
-            <option value="med">Médecine</option>
-            <option value="ing">Ingénierie</option>
+        <select type="text" name="Filière" id="fil" class="dropdown">
+            <option value="droit" class="dropdown-option">Droit</option>
+            <option value="info" class="dropdown-option">Informatique</option>
+            <option value="eco" class="dropdown-option">Economie</option>
+            <option value="med" class="dropdown-option">Médecine</option>
+            <option value="ing" class="dropdown-option">Ingénierie</option>
             <option value="autre">Autre</option>
         </select></div>
         </div>

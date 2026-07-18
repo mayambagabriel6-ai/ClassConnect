@@ -458,6 +458,89 @@ button:hover {
   }
 }
 
+@media (max-width: 900px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .side-bar {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .main {
+    padding: 16px;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .profil-body-grille {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 12px;
+  }
+
+  .top-bar,
+  .profil-hero,
+  .profil-card,
+  .faq-card,
+  .notification-card,
+  .profil-section {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .chat,
+  .discussions-sidebar,
+  .profil-hero,
+  .profil-section,
+  .faq-card,
+  .notification-card {
+    padding: 14px;
+  }
+
+  .actions,
+  .profil-hero-actions,
+  .chat-input-barre {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .side-bar nav a {
+    padding: 10px 12px;
+  }
+
+  .profil-photo-block img {
+    width: 120px;
+    height: 140px;
+  }
+}
+
 /* Styles de la page profil utilisateur et de sa structure. */
 .profil-page {
   padding: 24px;

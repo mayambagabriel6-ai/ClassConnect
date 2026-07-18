@@ -10,8 +10,9 @@
 
 <body>
     <form action="" id="registerForm">
-        <h2>Rejoignez ClassConnect !</h2>
-        <div class="role"><a href="etud.html" class="role-et" >Je suis un étudiant</a><a href="tuteur.html" class="role-tut">Je suis un tuteur</a></div>
+        <h2>Rejoignez ClassConnect !</h2><br>
+        <div class="role"><a href="etud.html" class="role-et active" >Je suis un étudiant</a><a href="tuteur.html" class="role-tut">Je suis un tuteur</a></div>
+
         <h3>Inscrivez-vous en tant qu'étudiant pour trouver le soutien dont vous avez besoin.</h3>
         <label for="nom">Nom</label>
         <input type="text" name="Nom" id="nom" placeholder="Nom" label="Nom" required> <br>
@@ -22,37 +23,38 @@
         <div class="form-row">
         <div class="form-group">
         <label for="uni">Université</label>
-        <select type="text" name="université" id="uni" label="Niveau d'étude" class="bubble-options">
-            <option value="none">Aucune</option>
-            <option value="upc">Université Protestante au Congo</option>
-            <option value="ucc">Université Catholique du Congo</option>
-            <option value="unikin">Université de Kinshasa</option>
-            <option value="upn">Université Pédagogique Nationale</option>
-            <option value="loyola">Université Loyola au Congo</option>
+        <select type="text" name="université" id="uni" label="Niveau d'étude" class="dropdown">
+            <option value="none" class="dropdown-option">Aucune</option>
+            <option value="upc" class="dropdown-option">Université Protestante au Congo</option>
+            <option value="ucc" class="dropdown-option">Université Catholique du Congo</option>
+            <option value="unikin" class="dropdown-option">Université de Kinshasa</option>
+            <option value="upn" class="dropdown-option">Université Pédagogique Nationale</option>
+            <option value="loyola" class="dropdown-option">Université Loyola au Congo</option>
+            <option value="autre" class="dropdown-option">Autre</option>
         </select>
         </div>
         <div class="form-group">
         <label for="fil">Filière</label>
-        <select type="text" name="Filière" id="fil" label="Filière" class="bubble-options">
-            <option value="droit">Droit</option>
-            <option value="info">Informatique</option>
-            <option value="eco">Economie</option>
-            <option value="med">Médecine</option>
-            <option value="ing">Ingénierie</option>
-            <option value="autre">Autre</option>
+        <select type="text" name="Filière" id="fil" label="Filière" class="dropdown">
+            <option value="droit" class="dropdown-option">Droit</option>
+            <option value="info" class="dropdown-option">Informatique</option>
+            <option value="eco" class="dropdown-option">Economie</option>
+            <option value="med" class="dropdown-option">Médecine</option>
+            <option value="ing" class="dropdown-option">Ingénierie</option>
+            <option value="autre" class="dropdown-option">Autre</option>
         </select>
         </div>
         <div class="form-group">
         <label for="niv">Niveau d'étude</label>
-        <select type="text" name="Niveau" id="niv" label="Niveau d'étude" class="bubble-options">
-            <option value="licence1">Licence1</option>
-            <option value="licence2">Licence2</option>n
-            <option value="licence3">Licence3</option>
-            <option value="licence4">Licence4</option>
-            <option value="master1">Master1</option>
-            <option value="master2">Master2</option>
-            <option value="doctorat1">Doctorat1</option>
-            <option value="doctorat2">Doctorat2</option>
+        <select type="text" name="Niveau" id="niv" label="Niveau d'étude" class="dropdown">
+            <option value="licence1" class="dropdown-option">Licence1</option>
+            <option value="licence2" class="dropdown-option">Licence2</option>
+            <option value="licence3" class="dropdown-option">Licence3</option>
+            <option value="licence4" class="dropdown-option">Licence4</option>
+            <option value="master1" class="dropdown-option">Master1</option>
+            <option value="master2" class="dropdown-option">Master2</option>
+            <option value="doctorat1" class="dropdown-option">Doctorat1</option>
+            <option value="doctorat2" class="dropdown-option">Doctorat2</option>
         </select>
         </div>
         </div>
