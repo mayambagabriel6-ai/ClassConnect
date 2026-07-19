@@ -36,8 +36,15 @@ body {
   margin-bottom: 4px;
 }
 
-.profile-container {
+.username {
   display: flex;
+  gap: 5px;
+  padding: 10px;
+  font-size: large;
+}
+.profil-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 12px;
@@ -46,7 +53,8 @@ body {
   width: 100%;
 }
 
-.profil-link {
+.profil-link,
+.actions {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -190,19 +198,35 @@ body {
 
 .avatar {
   margin: -18px -18px 12px;
-  height: 220px;
+  height: 320px;
   overflow: hidden;
   border-radius: 22px 22px 0 0;
 }
 
-.avatar img {
-  width: 100%;
-  height: 100%;
+.av1 {
+  background-image: url(garcon.jpg);
   object-fit: cover;
-  object-position: center;
-  display: block;
-  margin-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
+.av2 {
+  background-image: url(fillecourt.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.av3 {
+  background-image: url(fillelong.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 .badge {
   display: inline-block;
@@ -213,6 +237,7 @@ body {
 }
 
 .badge-tut {
+  justify-content: flex-start;
   background: #efe8ff;
   color: #5a3fa3;
 }
@@ -223,15 +248,43 @@ body {
 }
 
 .badge-dispo {
+  justify-content: flex-start;
   background: #eaf8ee;
   color: #2d7a44;
 }
 
 .badge-indispo {
+  justify-content: flex-start;
   background: #fdecec;
   color: #a03c3c;
 }
 
+.badge-free {
+  justify-content: flex-end;
+  background: rgba(250, 213, 93, 0.776);
+  color: #fefdfd;
+}
+
+.badge-cost {
+  justify-content: flex-end;
+  background: rgba(210, 208, 208, 0.868);
+  color: #3f2f60;
+}
+
+.like {
+  background: #ffffff;
+  border: #2f2348;
+  border-radius: 999px;
+  color: #2f2348c7;
+  justify-content: flex-end;
+}
+.like:checked {
+  color: rgb(179, 3, 82);
+}
+
+h3 {
+  color: #471b8a;
+}
 .actions {
   display: flex;
   gap: 10px;
@@ -253,7 +306,8 @@ button {
 .profil-btn:hover,
 .contact-btn:hover,
 button:hover {
-  transform: translateY(-1px);
+  box-shadow: #6425eb;
+  transform: scale(0,5s);
 }
 
 .contenu-page {
@@ -563,7 +617,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.profil-hero-header {
+.profil-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -571,10 +625,12 @@ button:hover {
   margin-bottom: 18px;
 }
 
-.profil-kicker {
+.acc-link {
+  padding: 5px;
   margin: 0 0 4px;
   font-size: 0.9rem;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.12em;
   color: #7c4dff;
   font-weight: 700;
@@ -615,19 +671,8 @@ button:hover {
   box-shadow: 0 8px 18px rgba(93, 69, 152, 0.066);
 }
 
-.contact-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #7c4dff, #5a3fa3);
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.2s ease;
-}
-.contact-link, .profil-link {
+.contact-link,
+.profile-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -635,6 +680,12 @@ button:hover {
   color: #5a3fa3;
   font-weight: 600;
   text-decoration: none;
+  transition: transform 0.2 ease;
+}
+
+.profile-link:hover,
+.contact-link:hover {
+  transform: scale(0.5s);
 }
 
 .visually-hidden {
@@ -657,7 +708,7 @@ button:hover {
 }
 
 @media (max-width: 900px) {
-  .profil-hero-header,
+  .profil-header,
   .profil-hero-content {
     flex-direction: column;
     align-items: flex-start;
