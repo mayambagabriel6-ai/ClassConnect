@@ -12,11 +12,7 @@
     <aside class="side-bar">
         <div class="logo">
             <i class="fas fa-user-graduate"></i>ClassConnect</div> <br>
-        <div class="profil-container">
-            <div class="username"><span id="prenom">Gabriel</span><span id="nom">Mayamba</span></div>
-            <a id="sidebarProfileLink" href="../Pages/profil.html" class="profil-link"><i class="fas fa-user"></i></a>
-        </div>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="../Pages/accueil.html" contacticon><i class="fas fa-search"></i>Explorer</a></li>
                 <li><a href="../Pages/messagerie.html" contacticon><i class="fas fa-envelope"></i>Messagerie</a></li>
@@ -24,11 +20,16 @@
                 <li><a href="../Pages/parametres.html" contacticon><i class="fas fa-cog"></i>Paramètres</a></li>
             </ul>
         </nav>
+        
+        <div class="profil-container">
+            <div class="username"><span id="prenom">Gabriel</span><span id="nom">Mayamba</span></div>
+            <a id="sidebarProfileLink" href="../Pages/profil.html" class="profil-link"><i class="fas fa-user"></i></a>
+        </div>
     </aside>
     <div class="main">
         <section class="top-bar">
        <div class="search-bar">
-        <input type="text" placeholder="Rechercher...">
+        <input type="text" placeholder="Rechercher..." id="searchUser">
         <button type="submit"><i class="fas fa-search"></i></button>
        </div>
        <div class="notif-wrapper">
@@ -38,16 +39,20 @@
        <div class="cards" id="cardsContainer">
          <article class="card">
            <div class="avatar av1">
-             <p class="badge badge-dispo">Disponible</p> <button type="submit" class="like"><i class="fas fa-heart"></i></button>
+             <p class="badge badge-dispo">Disponible</p> <button type="submit" class=" badge like"><i class="fas fa-heart"></i></button>
            </div>
            <p class="badge badge-tut">Tuteur</p> <p class="badge badge-free"><s>Gratuit</s></p>
            <h3>Oksana Nangonda</h3>
+           <div class="notation" aria-label="Note 4,8 sur 5">
+             <span class="stars">★★★★★</span>
+             <span class="note">4.8/5</span>
+           </div>
            <p><strong>Université :</strong> Université de Kinshasa</p>
            <p><strong>Niveau :</strong> Master 1</p>
-           <p>Expert en mathématiques, disponible pour des séances de soutien sur les équations et la logique.</p>
+           <p>Spécialiste des mathématiques et de la physique, disponible pour des séances de soutien sur les équations et la logique.</p>
            <div class="tags-competences">
-             <span class="tag">Mathématiques</span>
-             <span class="tag">Physique</span>
+             <span class="tag" id="matiere">Mathématiques</span>
+             <span class="tag" id="matiere">Physique</span>
            </div>
            <a href="profil.html" class="profile-link"><button class="profil-btn"><i class="fas fa-user"></i> Voir le profil</button></a>
            <a href="messagerie.html" class="contact-link"><button class="contact-btn"><i class="fas fa-envelope"></i> Contacter</button></a>
@@ -55,16 +60,20 @@
 
          <article class="card">
            <div class="avatar av2">
-             <p class="badge badge-dispo">Disponible</p> <button type="submit" class="like"><i class="fas fa-heart"></i></button>
+             <p class="badge badge-dispo">Disponible</p> <button type="submit" class="badge like"><i class="fas fa-heart"></i></button>
            </div>
            <p class="badge badge-et">Étudiante</p>
            <h3>Zayana Ndombasi</h3>
+           <div class="notation" aria-label="Note 4,6 sur 5">
+             <span class="stars">★★★★★</span>
+             <span class="note">4.6/5</span>
+           </div>
            <p><strong>Université :</strong> Université Catholique du Congo</p>
            <p><strong>Niveau :</strong> Licence 3</p>
-           <p>Étudiante active recherchant un tuteur en informatique et en méthodologie de travail.</p>
+           <p>Étudiante motivée qui souhaite renforcer ses bases en programmation et en logique algorithmique.</p>
            <div class="tags-competences">
-             <span class="tag">Programmation</span>
-             <span class="tag">Statistiques</span>
+             <span class="tag" id="matiere">Programmation</span>
+             <span class="tag" id="matiere">Statistiques</span>
            </div>
            <a href="profil.html" class="profile-link"><button class="profil-btn"><i class="fas fa-user"></i> Voir le profil</button></a>
            <a href="messagerie.html" class="contact-link"><button class="contact-btn"><i class="fas fa-envelope"></i> Contacter</button></a>
@@ -72,23 +81,209 @@
 
          <article class="card">
            <div class="avatar av3">
-             <p class="badge badge-indispo">Indisponible</p> <button type="submit" class="like"><i class="fas fa-heart"></i></button>
+             <p class="badge badge-indispo">Indisponible</p> <button type="submit" class="badge like"><i class="fas fa-heart"></i></button>
            </div>
-           <p class="badge badge-tut">Tuteur</p> <p class="badge badge-cost">1,00$/h</p>
+           <p class="badge badge-tut">Tuteur</p> <p class="badge badge-cost">1.20$/h</p>
            <h3>Sonia Magindu</h3>
+           <div class="notation" aria-label="Note 4,9 sur 5">
+             <span class="stars">★★★★★</span>
+             <span class="note">4.9/5</span>
+           </div>
            <p><strong>Université :</strong> Université Protestante au Congo</p>
            <p><strong>Niveau :</strong> Master 2</p>
-           <p>Tuteur expérimenté en économie et gestion, disponible pour aider aux projets et aux examens.</p>
+           <p>Tuteur expérimenté en économie et gestion, disponible pour accompagner les étudiants dans leurs projets et révisions.</p>
            <div class="tags-competences">
-             <span class="tag">Économie</span>
-             <span class="tag">Gestion</span>
+             <span class="tag" id="matiere">Économie</span>
+             <span class="tag" id="matiere">Gestion</span>
+           </div>
+           <a href="profil.html" class="profile-link"><button class="profil-btn"><i class="fas fa-user"></i> Voir le profil</button></a>
+           <a href="messagerie.html" class="contact-link"><button class="contact-btn"><i class="fas fa-envelope"></i> Contacter</button></a>
+         </article>
+
+         <article class="card">
+           <div class="avatar av4">
+             <p class="badge badge-dispo">Disponible</p> <button type="submit" class="badge like"><i class="fas fa-heart"></i></button>
+           </div>
+           <p class="badge badge-tut">Tuteur</p> <p class="badge badge-cost">1,00$/h</p>
+           <h3>Ruth Kashama</h3>
+           <div class="notation" aria-label="Note 4,7 sur 5">
+             <span class="stars">★★★★★</span>
+             <span class="note">4.7/5</span>
+           </div>
+           <p><strong>Université :</strong> Université de Lubumbashi</p>
+           <p><strong>Niveau :</strong> Master 2</p>
+           <p>Professeure de langue anglaise passionnée par l’aide aux étudiants pour améliorer leur expression orale et écrite.</p>
+           <div class="tags-competences">
+             <span class="tag" id="matiere">Anglais</span>
+           </div>
+           <a href="profil.html" class="profile-link"><button class="profil-btn"><i class="fas fa-user"></i> Voir le profil</button></a>
+           <a href="messagerie.html" class="contact-link"><button class="contact-btn"><i class="fas fa-envelope"></i> Contacter</button></a>
+         </article>
+
+         <article class="card">
+           <div class="avatar av5">
+             <p class="badge badge-dispo">Disponible</p> <button type="submit" class="badge like"><i class="fas fa-heart"></i></button>
+           </div>
+           <p class="badge badge-tut">Tuteur</p> <p class="badge badge-cost">1,00$/h</p>
+           <h3>Luc Khonde</h3>
+           <div class="notation" aria-label="Note 4,5 sur 5">
+             <span class="stars">★★★★★</span>
+             <span class="note">4.5/5</span>
+           </div>
+           <p><strong>Université :</strong> Université de Kinshasa</p>
+           <p><strong>Niveau :</strong> Master 2</p>
+           <p>Passionné par les réseaux et les télécommunications, prêt à expliquer clairement les concepts techniques.</p>
+           <div class="tags-competences">
+             <span class="tag" id="matiere">Réseaux et Télécom</span>
+           </div>
+           <a href="profil.html" class="profile-link"><button class="profil-btn"><i class="fas fa-user"></i> Voir le profil</button></a>
+           <a href="messagerie.html" class="contact-link"><button class="contact-btn"><i class="fas fa-envelope"></i> Contacter</button></a>
+         </article>
+
+         <article class="card">
+           <div class="avatar av6">
+             <p class="badge badge-dispo">Disponible</p> <button type="submit" class="badge like"><i class="fas fa-heart"></i></button>
+           </div>
+           <p class="badge badge-et">Etudiant</p> <p class="badge badge-cost">1,00$/h</p>
+           <h3>Andréa Mayavanga</h3>
+           <div class="notation" aria-label="Note 4,4 sur 5">
+             <span class="stars">★★★★★</span>
+             <span class="note">4.4/5</span>
+           </div>
+           <p><strong>Université :</strong> Université de Goma</p>
+           <p><strong>Niveau :</strong> Master 2</p>
+           <p>Étudiante curieuse et méthodique, à l’aise avec la mécanique et la robotique appliquée.</p>
+           <div class="tags-competences">
+             <span class="tag" id="matiere">Mécanique</span>
+             <span class="tag" id="matiere">Robotique</span>
+           </div>
+           <a href="profil.html" class="profile-link"><button class="profil-btn"><i class="fas fa-user"></i> Voir le profil</button></a>
+           <a href="messagerie.html" class="contact-link"><button class="contact-btn"><i class="fas fa-envelope"></i> Contacter</button></a>
+         </article>
+
+         <article class="card">
+           <div class="avatar av7">
+             <p class="badge badge-indispo">Indisponible</p> <button type="submit" class="badge like"><i class="fas fa-heart"></i></button>
+           </div>
+           <p class="badge badge-et">Etudiant</p> <p class="badge badge-cost">2,00$/h</p>
+           <h3>James Obul'Okwess</h3>
+           <div class="notation" aria-label="Note 4,3 sur 5">
+             <span class="stars">★★★★★</span>
+             <span class="note">4.3/5</span>
+           </div>
+           <p><strong>Université :</strong> Université de Kisangani</p>
+           <p><strong>Niveau :</strong> Master 2</p>
+           <p>Étudiant motivé qui aime expliquer la biologie de façon simple et concrète pour faciliter l’apprentissage.</p>
+           <div class="tags-competences">
+             <span class="tag" id="matiere">Biologie</span>
+           </div>
+           <a href="profil.html" class="profile-link"><button class="profil-btn"><i class="fas fa-user"></i> Voir le profil</button></a>
+           <a href="messagerie.html" class="contact-link"><button class="contact-btn"><i class="fas fa-envelope"></i> Contacter</button></a>
+         </article>
+
+         <article class="card">
+           <div class="avatar av8">
+             <p class="badge badge-dispo">Disponible</p> <button type="submit" class="badge like"><i class="fas fa-heart"></i></button>
+           </div>
+           <p class="badge badge-tut">Tuteur</p> <p class="badge badge-free">Gratuit</p>
+           <h3>Amara Matadi</h3>
+           <div class="notation" aria-label="Note 4,8 sur 5">
+             <span class="stars">★★★★★</span>
+             <span class="note">4.8/5</span>
+           </div>
+           <p><strong>Université :</strong> Université pédagogique nationale</p>
+           <p><strong>Niveau :</strong> Master 2</p>
+           <p>Tuteur polyvalent en langues, disponible pour aider à progresser en français et en espagnol.</p>
+           <div class="tags-competences">
+             <span class="tag" id="matiere">Français</span>
+             <span class="tag" id="matiere">Espagnol</span>
            </div>
            <a href="profil.html" class="profile-link"><button class="profil-btn"><i class="fas fa-user"></i> Voir le profil</button></a>
            <a href="messagerie.html" class="contact-link"><button class="contact-btn"><i class="fas fa-envelope"></i> Contacter</button></a>
          </article>
        </div>
     </div>
+    <script>
+        // 1. Sélectionner tous les boutons de like présents dans la page.
+        const likeBtns = document.querySelectorAll('.like');
+
+        // 2. Ajouter un écouteur de clic sur chaque bouton de like.
+        //    Au clic, on alterne la classe "liked" pour changer l'apparence du bouton.
+        likeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('liked');
+            });
+        });
+
+        // 3. Sélectionner l'élément de saisie de recherche et le conteneur des cartes.
+        const searchUser = document.getElementById('searchUser');
+        const cardsContainer = document.getElementById('cardsContainer');
+
+        // 4. Récupérer toutes les cartes de profil sous forme de tableau.
+        //    Cela permet de les parcourir facilement pour les afficher ou les cacher.
+        const userCards = Array.from(cardsContainer.querySelectorAll('.card'));
+
+        // 5. Créer une fonction de normalisation du texte.
+        //    Elle transforme le texte en minuscules et supprime les accents.
+        //    Cela rend la recherche insensible à la casse et aux accents.
+        function normalizeText(text) {
+            return String(text || '')
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '');
+        }
+
+        // 6. Créer la fonction principale de filtrage des utilisateurs.
+        //    Elle lit la valeur saisie dans la barre de recherche et teste si chaque carte contient ce texte.
+        function filterUsers() {
+            // 6.1. Récupérer la valeur tapée dans l'input et la normaliser.
+            const searchText = normalizeText(searchUser.value.trim());
+
+            // 6.2. Initialiser une variable pour savoir si au moins une carte est visible.
+            let hasVisibleCard = false;
+
+            // 6.3. Parcourir chaque carte de profil.
+            userCards.forEach(card => {
+                // 6.3.1. Extraire le texte visible dans la carte.
+                const cardText = normalizeText(card.textContent);
+
+                // 6.3.2. Vérifier si le texte de la carte contient la recherche.
+                const matches = cardText.includes(searchText);
+
+                // 6.3.3. Afficher la carte si elle correspond, sinon la cacher.
+                card.style.display = matches ? '' : 'none';
+
+                // 6.3.4. Mettre à jour la variable si une carte est visible.
+                if (matches) {
+                    hasVisibleCard = true;
+                }
+            });
+
+            // 7. Vérifier s'il faut afficher un message d'absence de résultat.
+            const noResultMessage = document.getElementById('no-result');
+
+            // 7.1. Si une recherche est en cours et aucune carte ne correspond, on crée un message.
+            if (searchText && !hasVisibleCard) {
+                if (!noResultMessage) {
+                    const message = document.createElement('p');
+                    message.id = 'no-result';
+                    message.textContent = 'Aucun profil ne correspond à votre recherche.';
+                    cardsContainer.appendChild(message);
+                }
+            } else if (noResultMessage) {
+                // 7.2. Sinon, on supprime le message s'il existe déjà.
+                noResultMessage.remove();
+            }
+        }
+
+        // 8. Ajouter un écouteur d'événement sur l'input de recherche.
+        //    À chaque frappe, on relance la fonction de filtrage.
+        searchUser.addEventListener('input', filterUsers);
+
+        // 9. Appliquer le filtre une première fois au chargement de la page.
+        filterUsers();
+    </script>
     <!--script type="module" src="../js/accueil.js"></script-->
 </body>
 
-</html>>
+</html>

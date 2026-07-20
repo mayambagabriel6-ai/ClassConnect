@@ -16,12 +16,12 @@ header{
     font-size: 30px;
     width: 100%;
     display: flex;
-    
 }
     div{
         font-size: larger;
         display: table-column;
         padding: 30px;
+        justify-content: flex-start;
     }
 
 li{
@@ -36,6 +36,7 @@ li{
         align-self: center;
         align-items: left;
         padding: 10px;
+        justify-content: flex-end;
     }
     header nav ul{
         padding-left: 520px;
